@@ -1,0 +1,19 @@
+{
+  "name": "todo_app_node_with_react",
+  "version": "1.0.0",
+  "description": "A Sample Todo application which stores the list of tasks that needs to be done.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PavanKusunuri/todo_app_node_with_react.git"
+  },
+  "author": "Pavan Kusunuri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PavanKusunuri/todo_app_node_with_react/issues"
+  },
+  "homepage": "https://github.com/PavanKusunuri/todo_app_node_with_react#readme"
+}
