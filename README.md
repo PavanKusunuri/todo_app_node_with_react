@@ -7,6 +7,10 @@ Npm packages
 Dev Dependencies:
 These packages are used for development purpose only
 
+To install packages in development environment
+
+npm install concurrently --save-dev
+
   <h3> Concurrently </h3>
 
   <p> concurrently is used to run both node server and client (react) servers independently.
