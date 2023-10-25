@@ -1,15 +1,16 @@
 const mongoose = require("mongoose");
-const Schema = mongoose.Schema;
 
-const TodoSchema = new Schema({
-    todoItem: {
-        type: String,
-        required: true
+
+const Todo = new mongoose.Schema(
+  {
+    task: {
+      type: String,
+      required: true,
+      trim: true,
+      maxlength: 30,
     },
-    date: {
-        type: Date,
-        default: Date.now
-    }
-})
+  },
+  { timestamps: true }
+);
 
-module.exports = mongoose.model('todo', TodoSchema)
+module.exports = mongoose.model("Todo", Todo);
