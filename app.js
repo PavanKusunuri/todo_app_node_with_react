@@ -3,14 +3,8 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var dotenv = require('dotenv');
 
-
-
 dotenv.config()
-
 var app = express();
-
-
-
 
 var port = 5000;
 
@@ -39,13 +33,8 @@ var Todo = mongoose.model("Todo", todoSchema);
 
 //routes
 app.get("/", (req, res) =>{
-    // await Todo.find({});
-
     Todo.find({}).then(function(FoundItems){
-    
         res.json(FoundItems)
-
-    
       })
        .catch(function(err){
         console.log(err);
